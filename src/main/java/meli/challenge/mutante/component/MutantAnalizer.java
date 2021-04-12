@@ -33,7 +33,6 @@ public class MutantAnalizer {
             return true;
         }
         log.info("No Mutant Sequence Found");
-
         return false;
     }
 
@@ -67,6 +66,6 @@ public class MutantAnalizer {
                 return false;
             }
         }
-        return true;
+        return !dna.isEmpty();
     }
 }

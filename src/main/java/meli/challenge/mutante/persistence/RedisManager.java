@@ -7,6 +7,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 
 @Log4j2
+
 //singleton to manage redis conections
 public class RedisManager {
 

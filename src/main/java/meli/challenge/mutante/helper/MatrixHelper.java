@@ -7,6 +7,9 @@ public class MatrixHelper {
 
     //recieve a string list and returns a char array
     public static char[][] stringListToMatrix(List<String> stringList){
+        if(stringList.isEmpty()){
+            return new char[][]{};
+        }
         char[][] chars = new char[stringList.get(0).length()][stringList.size()];
         for (int i=0; i < stringList.size(); i++) {
             for(int j = 0; j < stringList.get(i).length() ; j++){
